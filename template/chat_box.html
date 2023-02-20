@@ -97,7 +97,7 @@ body {
     <form id="post-form" method="POST" action="/create_room">
         {% csrf_token %}
         <label>Room name</label>
-		<input type="hidden" name="user" id="user" value="{{user}}"/>
+		    <input type="hidden" name="user" id="user" value="{{user}}"/>
         <input type="text" name="room_name" id="room_name" width="100px" />
         <input type="submit" value="Create Room">
 	</form>
